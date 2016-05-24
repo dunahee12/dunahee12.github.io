@@ -8,21 +8,29 @@
 
 
 
-<img src="images/background.jpg" id="backgroundImage">
+<img src="../globalPics/background.jpg" id="backgroundImage">
 
-<input type="image" id="menubtn" src="images/menuicon.jpg" alt="Menu" onclick="showMenu()"/>
+<!-- <input typ se="image" id="menubtn" src="images/menuicon.jpg" alt="Menu" onclick="showMenu()"/> -->
 
-<!--Sets up my profile picture -->
-<img src="images/jakedunahee.jpg" id="profilePic">
+<div id="mainDiv">
+  <!--Sets up my profile picture -->
+  <img src="images/jakedunahee.jpg" id="profilePic">
 
-<!--Set up texts-->
-<h1 id="nameText">Jake Dunahee</h1>
-<h1 id="devText">Mobile Software Engineer</h1>
-<p id="introductionText">Lorem ipsum dolor sit amet, an salutandi maiestatis vis.
-Ei veniam euismod menandri mel</p>
+  <!--Set up texts-->
+  <h1 id="nameText">Jake Dunahee</h1>
+  <h1 id="devText">Mobile Software Engineer</h1>
+  <p id="introductionText">Lorem ipsum dolor sit amet, an salutandi maiestatis vis.
+  Ei veniam euismod menandri mel</p>
+</div>
+
+<div id="navButtons">
+  <button id="portfolioButton">Portfolio</button>
+  <button id="resumeButton" onclick="window.location='../resume/resume.html'">Resume</button>
+  <button id="aboutButton">About</button>
+</div>
 
 
-<div id="menu">
+<!-- <div id="menu">
   <input type="image" id="closebtn" src="images/xicon.jpg" alt="Menu" onclick="hideMenu()"/>
 
   <h3 id="menuTitle">Menu</h3>
@@ -30,7 +38,7 @@ Ei veniam euismod menandri mel</p>
   <ul>
     <li>Item 1</li>
   </ul>
-</div>
+</div> -->
 
 
 <!--Sets up UI Elements  -->
@@ -38,12 +46,8 @@ Ei veniam euismod menandri mel</p>
 <h1 id="companyName">Company Name</h1>
 <button id="loginButton">Login</button> -->
 
-<!--Top Right Buttons  -->
-<!-- <button id="productButton" style="right:155px; margin-top:31px">Product</button>
-<button id="resourcesButton" style="right:235px; margin-top:31px">Resources</button>
-<button id="aboutButton" style="right:337px; margin-top:31px">About</button>
 
-<button onclick="window.location='../signUp/signupPage.html'" id="signupButton">Sign Up</button>
+<!-- <button onclick="window.location='../signUp/signupPage.html'" id="signupButton">Sign Up</button>
 <h2 id="sloganText">A new way to enjoy work</h2>
 <p id="descriptionText">Lorem ipsum dolor sit amet, an salutandi maiestatis vis.
 <br> Ei veniam euismod menandri mel.</p> -->
