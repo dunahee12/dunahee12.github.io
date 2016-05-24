@@ -2,10 +2,15 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="indexStyle.css">
+<script src="jquery-1.12.4.min.js"></script>
 </head>
 <body>
 
+
+
 <img src="images/background.jpg" id="backgroundImage">
+
+<input type="image" id="menubtn" src="images/menuicon.jpg" alt="Menu" onclick="showMenu()"/>
 
 <!--Sets up my profile picture -->
 <img src="images/jakedunahee.jpg" id="profilePic">
@@ -13,6 +18,20 @@
 <!--Set up texts-->
 <h1 id="nameText">Jake Dunahee</h1>
 <h1 id="devText">Mobile Software Engineer</h1>
+<p id="introductionText">Lorem ipsum dolor sit amet, an salutandi maiestatis vis.
+Ei veniam euismod menandri mel</p>
+
+
+<div id="menu">
+  <input type="image" id="closebtn" src="images/xicon.jpg" alt="Menu" onclick="hideMenu()"/>
+
+  <h3 id="menuTitle">Menu</h3>
+
+  <ul>
+    <li>Item 1</li>
+  </ul>
+</div>
+
 
 <!--Sets up UI Elements  -->
 <!-- <img src="images/fakeLogo.png" id="logoImage">
@@ -33,3 +52,13 @@
 
 </body>
 </html>
+
+<script>
+    function hideMenu() {
+      $('#menu').fadeOut(300);
+    }
+
+    function showMenu() {
+      $('#menu').fadeIn(300);
+    }
+</script>

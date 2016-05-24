@@ -1,10 +1,12 @@
 @font-face { font-family: WeblySleek; src: url('../weblysleek/weblysleekuil.ttf'); }
 @font-face { font-family: WeblySleekBold; src: url('../weblysleek/weblysleekuisb.ttf'); }
+@font-face { font-family: WeblySleekItalic; src: url('../weblysleek/weblysleekuisli.ttf')}
 @font-face { font-family: TypoRound; src: url('../typo-round/Typo_Round_Thin_Demo.otf')}
 @font-face { font-family: HandWritten; src: url('../scribbles/Hand Scribble Sketch Times.otf')}
 
 body {
   margin: 0;
+  margin-right: auto;
 }
 
 /*img[id="logoImage"] {
@@ -51,6 +53,18 @@ button[id="signupButton"] {
   left:50%;
   top: 265px;
 }*/
+p[id="introductionText"] {
+  position: absolute;
+  margin-top: 390px;
+  text-align: center;
+  width: 600px;
+  margin-left:-300px;
+  left: 50%;
+  color: white;
+  font-family: WeblySleek;
+  font-size: 14pt;
+}
+
 h1 {
   position: absolute;
   text-align: center;
@@ -59,25 +73,25 @@ h1 {
 
 h1[id="nameText"] {
   position: absolute;
-  margin-top: 325px;
+  margin-top: 275px;
   text-align: center;
   width: 100%;
   color: white;
   font-family: WeblySleekBold, serif;
-  font-size: 30pt;
+  font-size: 34pt;
 }
 
 h1[id="devText"] {
-  margin-top: 385px;
+  margin-top: 340px;
   width: 100%;
-  font-family: WeblySleekBold, serif;
-  font-size: 15pt;
+  font-family: WeblySleekItalic, serif;
+  font-size: 17pt;
 }
 
 img[id="profilePic"] {
   width: 200px;
   height: 200px;
-  top: 100px;
+  top: 45px;
   position:absolute;
   margin-left:-100px;
   left: 50%;
@@ -93,6 +107,46 @@ img[id="backgroundImage"] {
   position: fixed;
   width: 100%;
   height: auto;
+}
+
+input[id="menubtn"] {
+  width: 50px;
+  height: 30px;
+  top:35px;
+  position:absolute;
+  left: 100%;
+  margin-left: -85px;
+  overflow: auto;
+  outline: none;
+}
+
+#menu {
+  width: 200px;
+  height: 400px;
+  top:27px;
+  position:absolute;
+  left: 100%;
+  margin-left: -235px;
+  background-color: #ffffff;
+  position:absolute;
+  display: none;
+  border-radius: 5px;
+}
+
+input[id="closebtn"] {
+  width: 20px;
+  height: 20px;
+  top: 15px;
+  position:absolute;
+  left: 100%;
+  margin-left: -35px;
+}
+
+h3[id="menuTitle"] {
+  width: 100%;
+  color: #000000;
+  top: 10px;
+  text-align: center;
 }
 
 /*button[id="loginButton"] {
