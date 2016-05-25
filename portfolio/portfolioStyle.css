@@ -10,7 +10,7 @@ body {
 }
 
 html {
-  background: url("../globalPics/background.jpg") no-repeat center center fixed; 
+  background: url("../globalPics/background.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -25,7 +25,15 @@ h1 {
   font-size: 20pt;
 }
 
-h1[id="resumeText"] {
+p {
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-family: WeblySleek, serif;
+  font-size: 12pt;
+}
+
+h1[id="portfolioText"] {
   position: absolute;
   top: 5px;
   text-align: center;
@@ -37,14 +45,96 @@ h1[id="resumeText"] {
   font-size: 20pt;
 }
 
-img[id="backgroundImage"] {
-  display: block;
-  margin: 0;
-  position: fixed;
-  width: auto;
-  height: 100%;
+.app {
+  position: absolute;
+  width: 300px
+  height: 300px;
 }
 
+.appImage {
+  width: 100px;
+  height: 100px;
+  top:20px;
+  position:absolute;
+  left: 50%;
+  margin-left: -50px;
+  border-radius: 20px;
+}
+
+.appName {
+  top: 120px;
+  font-size: 12pt;
+  width: 200px;
+  left: 50%;
+  margin-left: -100px;
+  font-family: WeblySleek, serif;
+}
+
+#MovingOrganizerDiv {
+  top: 190px;
+  left: 25%;
+  /*margin-left: -150px;*/
+}
+
+#ShowdownDiv {
+  top: 190px;
+  left: 50%;
+  /*margin-left: px;*/
+}
+
+#SkateDiceDiv {
+  top: 190px;
+  left: 75%;
+}
+
+h1[id="PersonalTitle"] {
+  top: 110px;
+  width: 100%;
+  font-family: WeblySleek;
+  font-size: 20pt;
+}
+
+input[id="boxImage"] {
+  width: 100px;
+  height: 100px;
+  top:20px;
+  position:absolute;
+  left: 50%;
+  margin-left: -50px;
+  overflow: auto;
+  outline: none;
+  border-radius: 20px;
+}
+
+h1[id="moText"] {
+  top: 120px;
+  font-size: 14pt;
+  width: 200px;
+  left: 50%;
+  margin-left: -100px;
+  font-family: WeblySleekBold, serif;
+}
+
+p[id="moDesc"] {
+  top: 150px;
+  width: 300px;
+  left: 50%;
+  margin-left: -150px;
+}
+
+
+
+input[id="showdownImage"] {
+  width: 100px;
+  height: 100px;
+  top:75px;
+  left: 50%;
+  position:absolute;
+  margin-left: 10px;
+  overflow: auto;
+  outline: none;
+  border-radius: 20px;
+}
 
 /* Navigation buttons */
 
@@ -84,65 +174,4 @@ button {
   font-size: 15pt;
   background-color: rgba(0, 0, 0, 0);
   font-family: WeblySleek;
-}
-
-#overviewDiv {
-  position: absolute;
-  width: 45%;;
-  height: 1500px;
-  margin-left: 3%;
-  top: 75px;
-}
-
-h1[id="overviewText"] {
-  top: 0px;
-  font-size: 30pt;
-}
-
-h1[id="topSkills"] {
-  top: 0px;
-  font-size: 25pt;
-  position: absolute;
-}
-
-h1[id="bonuses"] {
-  top: 275px;
-  font-size: 25pt;
-  position: absolute;
-}
-
-ul {
-  top: 60px;
-  position: absolute;
-}
-
-ul[id="bonusList"] {
-  top: 335px;
-}
-
-li {
-  color: white;
-  font-family: WeblySleek, serif;
-  font-size: 13pt;
-}
-
-
-/* Resume Google Doc */
-
-#pdfDiv {
-  position: absolute;
-  width: 50%;;
-  height: 1500px;
-  left: 100%;
-  margin-left: -52.5%;
-  top: 100px;
-}
-
-iframe[id="pdfObject"] {
-  width: 100%;
-  height: 100%;
-  background-color: #FFFFFF;
-  border: none;
-  scrolling: auto;
-  frameborder: 0;
 }
