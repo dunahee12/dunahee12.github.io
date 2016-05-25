@@ -19,12 +19,14 @@ h1 {
 
 h1[id="resumeText"] {
   position: absolute;
-  top: 70px;
+  top: 5px;
   text-align: center;
-  width: 100%;
+  width: 200px;
+  left: 50%;
+  margin-left: -100px;
   color: white;
   font-family: WeblySleekBold, serif;
-  font-size: 34pt;
+  font-size: 20pt;
 }
 
 img[id="backgroundImage"] {
@@ -80,8 +82,8 @@ button {
   position: absolute;
   width: 45%;;
   height: 1500px;
-  margin-left: 2.5%;
-  top: 200px;
+  margin-left: 3%;
+  top: 75px;
 }
 
 h1[id="overviewText"] {
@@ -95,9 +97,19 @@ h1[id="topSkills"] {
   position: absolute;
 }
 
+h1[id="bonuses"] {
+  top: 275px;
+  font-size: 25pt;
+  position: absolute;
+}
+
 ul {
   top: 60px;
   position: absolute;
+}
+
+ul[id="bonusList"] {
+  top: 335px;
 }
 
 li {
@@ -111,11 +123,11 @@ li {
 
 #pdfDiv {
   position: absolute;
-  width: 45%;;
+  width: 50%;;
   height: 1500px;
   left: 100%;
-  margin-left: -47.5%;
-  top: 200px;
+  margin-left: -52.5%;
+  top: 100px;
 }
 
 iframe[id="pdfObject"] {
