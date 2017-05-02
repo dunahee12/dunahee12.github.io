@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by Pixelarity
+	html5up.net | @ajlkn
+	License: pixelarity.com/license
+-->
+<html>
+	<head>
+		<title>Thank You</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="images/promenadeUmbrella.png" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<h1><a href="index.html">Promenade</a> Labs</h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li>
+							<a href="#" class="icon fa-angle-down">Menu</a>
+							<ul>
+								<li><a href="aboutus.html">About Us</a></li>
+								<li><a href="ourwork.html">Our Work</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<!-- <li>
+									<a href="#">Submenu</a>
+									<ul>
+										<li><a href="#">Option One</a></li>
+										<li><a href="#">Option Two</a></li>
+										<li><a href="#">Option Three</a></li>
+										<li><a href="#">Option Four</a></li>
+									</ul>
+								</li> -->
+							</ul>
+						</li>
+						<li><a href="contact.html" class="button">Sign Up</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+				<!-- <section class="banner"> -->
+
+				<!-- </section> -->
+				<section id="main" class="container 75%">
+					<!-- <img src="images/signupicon.png" style="width: 3em; height: auto; position:absolute; left: 50%; margin-left: -1.5em; margin-bottom: 10px;"/> -->
+					<header style="margin-top: 3.5em;">
+						<h2>Thank you!</h2>
+						<p>Your comment has been successfully submitted. We appreciate your time and will get back to you as soon as possible!</p>
+						<input type="submit" onclick="window.location='index.html'" value="Return Home"/>
+					</header>
+					<!-- <div class="box"> -->
+
+							<!-- <div class="row uniform">
+								<div class="12u">
+									<ul class="actions align-center">
+										<li><input type="submit" value="Get Started!"/></li>
+									</ul>
+								</div>
+							</div> -->
+
+					<!-- </div> -->
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://twitter.com/PromenadeLabs" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/Promenade-Labs-511364602392140/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.linkedin.com/company/promenade-labs" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/promenade-labs" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://dribbble.com/promenadelabs" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>Copyright © Promenade Labs, LLC. All rights reserved.</li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
+<script>
+	function validForm() {
+		var name = document.getElementById("name");
+		var email = document.getElementById("email");
+		var phone = document.getElementById("phone");
+
+		if (name.value() == "") {
+			name.focus();
+			return false;
+		}
+
+		if (email.value() == "") {
+		  email.focus();
+			return false;
+		}
+
+		if (phone.value() == "") {
+			phone.focus();
+			return false;
+		}
+
+		return true;
+	}
+
+	function processForm()
+	{
+		var parameters = location.search.substring(1).split("&");
+		var temp = parameters[0].split("=");
+		l = getUrlParam("email");
+		var emailTf = document.getElementById("email");
+		if (l) {
+			console.log(l);
+			emailTf.value = l;
+		}
+	}
+
+	function getUrlParam(name) {
+    var results = new RegExp('[\\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    return (results && decodeURIComponent(results[1])) || undefined;
+}
+
+	processForm();
+
+</script>

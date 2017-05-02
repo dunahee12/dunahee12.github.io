@@ -3,10 +3,9 @@
 	<head>
 		<title>Jake Dunahee</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<script src="node_modules/sweetalert/dist/sweetalert.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="node_modules/sweetalert/dist/sweetalert.css">
 		<script src="assets/webshim-gh-pages/js-webshim/minified/polyfiller.js"></script>
@@ -16,168 +15,174 @@
         webshims.cfg.no$Switch = true;
 				jQuery.webshims.polyfill('forms');
     </script>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body>
-
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<span class="image avatar"><img src="images/me.jpg" alt="" /></span>
-					<h1 id="logo"><a href="#">Jake Dunahee</a></h1>
-					<p>Professional Software Engineer</p>
-				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="#one" class="active">About</a></li>
-						<li><a href="#two">Skills</a></li>
-						<li><a href="#three">Portfolio</a></li>
-						<li><a href="#four">Contact</a></li>
-					</ul>
-				</nav>
-				<footer>
-					<ul class="icons">
-						<li><a target="_blank" href="https://twitter.com/JacobDunahee" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a target="_blank" href="https://www.linkedin.com/in/jacob-dunahee-1ba598b5" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a target="_blank" href="https://dribbble.com/dunahee12" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a target="_blank" href="https://github.com/dunahee12" class="icon fa-github"><span class="label">Github</span></a></li>
-						<li><a href="mailto:dunahee12@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-						<li><a href="tel:8159922246" class="icon fa-phone"><span class="label">Phone</span></a></li>
-					</ul>
-				</footer>
-			</section>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
 
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-mobile"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Jake Dunahee</h1>
+								<p>Native Mobile Developer</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#about">About</a></li>
+								<li><a href="#portfolio">Portfolio</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</nav>
+					</header>
+
 				<!-- Main -->
 					<div id="main">
 
-						<!-- One -->
-							<section id="one">
-								<div class="container">
-									<header class="major">
-										<h2>About Me</h2>
-										<p>Hi!  My name is Jake Dunahee and I am a <br/>mobile software engineer.</p>
-									</header>
-									<p>I specialize in native iOS and Android development. Using tools like XCode and Android Studio, I enjoy building beautiful apps that function as well as they look.  I am able to handle any process in the development cycle from design to deployment.  So, if you're looking for a skilled developer with professional experience, let's get in touch!</p>
-								</div>
-							</section>
+							<!-- About -->
+								<article id="about">
+									<h2 class="major">About</h2>
+									<span class="image main"><img src="images/me.jpg" alt="" /></span>
+									<p>I specialize in native iOS and Android development. Using tools like XCode and Android Studio, I enjoy building beautiful apps that function as well as they look. I am able to handle any process in the development cycle from design to deployment. So, if you're looking for a skilled developer with professional experience, let's get in touch!</p>
+								</article>
 
-						<!-- Two -->
-							<section id="two">
-								<div class="container">
-									<h3>Skills</h3>
-									<p>Although I specialize in mobile development, I have a wide set of skills and am always looking to expand them.  Here are some of my strongest skills:</p>
-									<ul class="feature-icons">
-										<li class="fa-apple">iOS Development</li>
-										<li class="fa-android">Android Development</li>
-										<li class="fa-rocket">Mobile Deployment</li>
-										<li class="fa-desktop">Web Development</li>
-										<li class="fa-pencil">UI/UX Design</li>
-										<li class="fa-check">Testing & Continuous Integration</li>
-									</ul>
-								</div>
-							</section>
-
-						<!-- Three -->
-							<section id="three">
-								<div class="container">
-									<h3>Portfolio</h3>
-									<p>Here are some projects that I have worked on in the past, and some that I am still working on.  They are a mixture of personal and professional projects from the past 2 years.</p>
+							<!-- Work -->
+								<article id="portfolio">
+									<h1 class="major">Portfolio</h1>
+									<h2 style="font-size: 15pt;">Professional Apps</h2>
+									<!-- <span class="image main"><img src="images/pizza.jpg" alt="" /></span> -->
+									<!-- <p>Here are some projects that I have worked on in the past, and some that I am still working on.  They are a mixture of personal and professional projects from the past 2 years.</p> -->
 									<div class="features">
-										<article>
-											<a target="_blank" href="https://itunes.apple.com/us/app/moving-organizer/id1092334171?mt=8" class="image"><img src="images/boxImage.jpg" alt=""/></a>
+										<div>
+											<a target="_blank" href="https://itunes.apple.com/us/app/chase-mobile/id298867247?mt=8" class="image"><img src="images/appicons/chase.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>Moving Organizer</h4>
-												<p>This is a personal app that I created to ease the hassle of moving to new places.  The app helps users track their items, room by room, as they move.</p>
+												<h3>Chase Mobile</h3>
+												<p>This app is pretty self-explanatory. One of the biggest banks around, and I've been lucky enough to get to work on this application during my contract at JP Morgan & Chase.</p>
 											</div>
-										</article>
-										<article>
-											<a target="_blank" href="https://itunes.apple.com/us/app/sequence-showdown/id979065530?mt=8" class="image"><img src="images/showdown.jpg" alt="" /></a>
+										</div>
+										<div>
+											<a target="_blank" href="https://itunes.apple.com/us/app/j-p-morgan-mobile/id368221343?mt=8" class="image"><img src="images/appicons/jpm.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>Sequence Showdown</h4>
-												<p>This is a personal game I created for fun.  Sequence Showdown is a memory game that utilizes Game Center and really works your brain!</p>
+												<h3>J.P. Morgan Mobile</h3>
+												<p>Another self-explanatory app.  This is the other big application I've been working at during my time at JP Morgan & Chase.</p>
 											</div>
-										</article>
-										<article>
-											<a target="_blank" href="https://play.google.com/store/apps/details?id=yellow.bandana" class="image"><img src="images/skatewheel.png" alt="" /></a>
+										</div>
+										<div>
+											<a target="_blank" href="https://itunes.apple.com/us/app/a-color-story/id1015059175?mt=8" class="image"><img src="images/appicons/acs.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>Skate Dice</h4>
-												<p>Skate Dice is personal application that I created for the Google Play Store.  The app is a tool for skateboarders to challenge themselves and learn new tricks.</p>
-											</div>
-										</article>
-										<article>
-											<a target="_blank" href="https://itunes.apple.com/us/app/aomobile/id626262396?mt=8" class="image"><img src="images/amtrust.png" alt="" /></a>
-											<div class="inner">
-												<h4>AOMobile</h4>
-												<p>AOMobile is an app I worked on during my time at AmTrust Financial.  The app's main functionality is to let users view and edit their various policies on the go.</p>
-											</div>
-										</article>
-										<article>
-											<a target="_blank" href="https://itunes.apple.com/us/app/ambassador-referral-marketing/id1099859656?mt=8" class="image"><img src="images/ambassador.png" alt="" /></a>
-											<div class="inner">
-												<h4>Ambassador- Referral Marketing Automation</h4>
-												<p>This is an application that I built and am working on for my current employer, Ambassador.  It was built to demonstrate features from Ambassador's iOS SDK.</p>
-											</div>
-										</article>
-										<article>
-											<a target="_blank" href="http://www.promenadelabs.com" class="image"><img src="images/promenadeUmbrella.png" alt="" /></a>
-											<div class="inner">
-												<h4>Promenade Labs</h4>
-												<p>Promenade Labs is a software consulting company that I created.  This is the website I built for the company.</p>
-											</div>
-										</article>
-										<article>
-											<a target="_blank" href="http://www.acolorstory.com" class="image"><img src="images/acsLogo.png" alt="" /></a>
-											<div class="inner">
-												<h4>A Color Story</h4>
+												<h3>A Color Story</h3>
 												<p>A Color Story is a popular photo editing app which I currently work on for the company.  The app has over 2 million downloads and is still rapidly growing.</p>
 											</div>
-										</article>
-									</div>
-								</div>
-							</section>
-
-						<!-- Four -->
-							<section id="four">
-								<div class="container">
-									<h3>Contact Me</h3>
-									<p>Feel free to contact me at any time, and I will respond back to you as soon as possible!</p>
-									<form method="post" action="#" id='contactForm'>
-										<div class="row uniform">
-											<div class="6u 12u(xsmall)"><input type="text" name="name" id="name" placeholder="Name" required/></div>
-											<div class="6u 12u(xsmall)"><input type="email" name="email" id="email" placeholder="Email" required/></div>
 										</div>
-										<div class="row uniform">
-											<div class="12u"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-										</div>
-										<div class="row uniform">
-											<div class="12u"><textarea name="message" id="message" placeholder="Message" rows="6" required></textarea></div>
-										</div>
-										<div class="row uniform">
-											<div class="12u">
-												<ul class="actions">
-													<li><input type="submit" class="special" value="Send Message"/></li>
-													<!-- <li><input type="reset" value="Reset Form" /></li> -->
-												</ul>
+										<div>
+											<a target="_blank" href="https://itunes.apple.com/us/app/skorch/id1001454679?mt=8" class="image"><img src="images/appicons/skorch.jpg" alt="" /></a>
+											<div class="inner">
+												<h3>Skorch</h3>
+												<p>Skorch is an app that gives users the ability to post and view ratings and reviews in real-time. I did some freelance work on this app that added new features and functionality.</p>
 											</div>
 										</div>
-									</form>
+										<div>
+											<a target="_blank" href="https://itunes.apple.com/us/app/ambassador-referral-marketing/id1099859656?mt=8" class="image"><img src="images/appicons/ambassador.png" alt="" /></a>
+											<div class="inner">
+												<h3>Ambassador</h3>
+												<p>This is an application that I built and maintained for Ambassador, a referral marketing automation company. It was built to demonstrate features from Ambassador's iOS SDK, which I also built.</p>
+											</div>
+										</div>
+										<div>
+											<a target="_blank" href="https://itunes.apple.com/us/app/aomobile/id626262396?mt=8" class="image"><img src="images/appicons/amtrust.png" alt="" /></a>
+											<div class="inner">
+												<h3>AOMobile</h3>
+												<p>AOMobile is an app I worked on during my time at AmTrust Financial.  This is a customer-facing app that allows users to view and edit their various insurance policies on the go.</p>
+											</div>
+										</div>
 								</div>
-							</section>
 
+								<h2 style="font-size: 15pt;">Personal Apps</h2>
+								<div class="features">
+									<div>
+										<a target="_blank" href="https://itunes.apple.com/us/app/moving-organizer/id1092334171?mt=8" class="image"><img src="images/appicons/boxImage.jpg" alt="" /></a>
+										<div class="inner">
+											<h3>Moving Organizer</h3>
+											<p>This is a personal app that I created to ease the hassle of moving to new places. The app helps users track their items, room by room, as they move.</p>
+										</div>
+									</div>
+									<div>
+										<a target="_blank" href="https://itunes.apple.com/us/app/duel-tracker/id1203289510?mt=8" class="image"><img src="images/appicons/dueltracker.png" alt="" /></a>
+										<div class="inner">
+											<h3>Duel Tracker</h3>
+											<p>Due to the nerd in me, I build the iOS application, Duel Tracker. The app tracks Yu-Gi-Oh card duels. I built this because I felt competing apps were lacking some features.</p>
+										</div>
+									</div>
+									<div>
+										<a target="_blank" href="https://itunes.apple.com/us/app/sequence-showdown/id979065530?mt=8" class="image"><img src="images/appicons/showdown.jpg" alt="" /></a>
+										<div class="inner">
+											<h3>Sequence Showdown</h3>
+											<p>This is a personal game I created for fun. Sequence Showdown is a memory game that utilizes Game Center and really works out your brain!</p>
+										</div>
+									</div>
+									<div>
+										<a target="_blank" href="https://play.google.com/store/apps/details?id=yellow.bandana" class="image"><img src="images/appicons/skatewheel.png" alt="" /></a>
+										<div class="inner">
+											<h3>Skate Dice +</h3>
+											<p>Skate Dice is personal application that I created for the Google Play Store. The app is a tool for skateboarders to challenge themselves and learn new tricks.</p>
+										</div>
+									</div>
+							</div>
+						</article>
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<form method="post" action="#" id='contactForm'>
+									<div class="field half first">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" required=""/>
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" required=""/>
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="special" /></li>
+										<!-- <li><input type="reset" value="Reset" /></li> -->
+									</ul>
+								</form>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/jacob-dunahee-1ba598b5/" class="icon fa-linkedin"><span class="label">Twitter</span></a></li>
+									<li><a href="https://dribbble.com/dunahee12" class="icon fa-dribbble"><span class="label">Facebook</span></a></li>
+									<li><a href="https://github.com/dunahee12" class="icon fa-github"><span class="label">Instagram</span></a></li>
+									<li><a href="mailto:dunahee12@gmail.com" class="icon fa-envelope"><span class="label">GitHub</span></a></li>
+									<li><a href="tel:8159922246" class="icon fa-phone"><span class="label">GitHub</span></a></li>
+								</ul>
+							</article>
 					</div>
 
 				<!-- Footer -->
-					<section id="footer">
-						<div class="container">
-							<ul class="copyright">
-								<li>Copyright © Jake Dunahee. All rights reserved.</li>
-							</ul>
-						</div>
-					</section>
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/jacob-dunahee-1ba598b5/" class="icon fa-linkedin"><span class="label">Twitter</span></a></li>
+							<li><a href="https://dribbble.com/dunahee12" class="icon fa-dribbble"><span class="label">Facebook</span></a></li>
+							<li><a href="https://github.com/dunahee12" class="icon fa-github"><span class="label">Instagram</span></a></li>
+							<li><a href="mailto:dunahee12@gmail.com" class="icon fa-envelope"><span class="label">GitHub</span></a></li>
+							<li><a href="tel:8159922246" class="icon fa-phone"><span class="label">GitHub</span></a></li>
+						</ul>
+						<p class="copyright">&copy; Jake Dunahee. All rights reserved.</p>
+					</footer>
 
 			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -185,7 +190,6 @@
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 			<script>
 				var $contactForm = $('#contactForm');

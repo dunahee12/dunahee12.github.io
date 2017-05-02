@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Sign Up</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="images/promenadeUmbrella.png" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script src="node_modules/sweetalert/dist/sweetalert.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="node_modules/sweetalert/dist/sweetalert.css">
+		<script src="assets/webshim-gh-pages/js-webshim/minified/polyfiller.js"></script>
+		<script>
+        webshim.activeLang('en');
+        webshims.polyfill('forms');
+        webshims.cfg.no$Switch = true;
+				jQuery.webshims.polyfill('forms');
+    </script>
+	</head>
+
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" style="border-bottom: none;"><img src="images/promenadeUmbrellaTextLight.png" style="height: 2.25em; width:auto; margin-left: 20px; margin-top: 10px;" ></a>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li>
+							<a href="#" class="icon fa-angle-down">Menu</a>
+							<ul>
+								<li><a href="aboutus.html">About Us</a></li>
+								<li><a href="ourwork.html">Our Work</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</li>
+						<li><a href="blogs.html">Blog</a></li>
+						<li><a href="#" class="button">Sign Up</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+
+				<!-- </section> -->
+				<section id="main" class="container 75%">
+					<img src="images/paperairplane.png" style="width: 3em; height: auto; position:absolute; left: 50%; margin-left: -1.5em;"/>
+					<header style="margin-top: 3.5em;">
+						<h2>Sign Up</h2>
+						<p>Start your journey here.</p>
+					</header>
+					<div class="box">
+						<form id="signUpForm" method="post" action="https://formspree.io/jake@promenadelabs.com">
+							<input type="hidden" name="_next" value="thankyou.html" />
+							<div class="row uniform 50%">
+								<div class="6u 12u(mobilep)">
+									<input type="text" name="name" id="name" value="" placeholder="Name" required/>
+								</div>
+								<div class="6u 12u(mobilep)">
+									<input type="email" name="_replyto" id="email" value="" placeholder="Email" required/>
+								</div>
+							</div>
+							<div class="row uniform 50%">
+								<div class="6u 12u(mobilep)">
+									<input type="text" name="number" id="number" value="" placeholder="Phone Number" required/>
+								</div>
+								<div class="6u 12u(mobilep)">
+									<input type="text" name="compName" id="compName" value="" placeholder="Company Name" />
+								</div>
+								<div class="12u">
+									<input type="text" name="compUrl" id="compUrl" value="" placeholder="Company URL" />
+								</div>
+							</div>
+
+							<div class="row uniform 50%">
+								<div class="12u">
+									<textarea name="message" id="message" placeholder="Brief description of your needs" rows="6"></textarea>
+								</div>
+							</div>
+							<div class="row uniform">
+								<div class="12u">
+									<ul class="actions align-center">
+										<li><input id="btnSubmit" type="submit" value="Get Started!"/></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://twitter.com/PromenadeLabs" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/Promenade-Labs-511364602392140/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.linkedin.com/company/promenade-labs" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/promenade-labs" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://dribbble.com/promenadelabs" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="mailto:info@promenadelabs.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						<li><a href="tel:8159922246" class="icon fa-phone"><span class="label">Phone</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>Copyright © Promenade Labs, LLC. All rights reserved.</li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
+<script>
+var $contactForm = $('#signUpForm');
+	$contactForm.submit(function(e) {
+	e.preventDefault();
+	$.ajax({
+		url: '//formspree.io/jake@promenadelabs.com',
+		method: 'POST',
+		data: $(this).serialize(),
+		dataType: 'json',
+		beforeSend: function() {
+
+		},
+		success: function(data) {
+			swal({ title:"Thank you!",
+						text: "We appreciate your interest in Promenade Labs and we'll be in touch with you as soon as possible.",
+						type: "success"
+					},
+			function() {
+				window.location.href = "index.html";
+			});
+		},
+		error: function(err) {
+			swal({   title: "Sign up failed!",   text: "Please try again.",   type: "error",   confirmButtonText: "Dismiss", confirmButtonColor: "#959595" });
+		}
+	});
+});
+
+	function processForm()
+	{
+		var parameters = location.search.substring(1).split("&");
+		var temp = parameters[0].split("=");
+		l = getUrlParam("email");
+		var emailTf = document.getElementById("email");
+		if (l) {
+			console.log(l);
+			emailTf.value = l;
+		}
+	}
+
+	function getUrlParam(name) {
+    var results = new RegExp('[\\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    return (results && decodeURIComponent(results[1])) || undefined;
+	}
+
+	processForm();
+</script>
